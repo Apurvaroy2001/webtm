@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color:gainsboro;
+}
+
+.form {
+    width: 50%;
+    max-width: 400px;
+    height: 365px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6); /* Updated box shadow */
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.7rem;
+    position: relative;
+}
+
+.input-group label {
+    background-color: white;
+    padding: 0 0.25rem;
+    color: #999;
+    font-size: 0.7rem;
+    align-self: flex-start; 
+    position: absolute;
+    top: -0.5rem;
+    left: 0.5rem;
+}
+
+.input-group input {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    border: 1.6px solid #ccc;
+    border-radius: 6px;
+    padding-top: 1rem;
+    flex: 1;
+    background-color: white; 
+}
+input:checked {
+    background-color: white;
+}
+
+.button {
+    width: 100%;
+    padding: 12px 16px;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 20px;
+    background-color:orangered;
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color:orangered;
+}
