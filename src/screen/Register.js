@@ -13,16 +13,17 @@ const Register = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const name = fname + lname;
+            const name = fname + ' ' + lname;
             const apiUrl = 'https://smartappsplanet.com/test-api/api/register';
             const response = await axios.post(apiUrl, {
                 name,
                 email,
+                age:'22',
+                designation:'designation'
                 // age,
                 // designation: occupation
             });
-
-            // alert(response.data);
+            
             console.log(response.data);
             if (response.data.message === "Successfully Registered") {
                 setUserId(response.data.data.user_id); // Set the user_id in state
